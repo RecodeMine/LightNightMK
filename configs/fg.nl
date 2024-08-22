@@ -1076,7 +1076,7 @@
       },
       {
         "MessageAppend": {
-          "word": "_TH_RECODE",
+          "word": "_NL_RECODE",
           "Enabled": true,
           "Keybind": -1,
           "Drawn": true
