@@ -2539,7 +2539,7 @@
       },
       {
         "MessageAppend": {
-          "word": "_TH_RECODE",
+          "word": "_NL_RECODE",
           "Keybind": [
             -1,
             false
