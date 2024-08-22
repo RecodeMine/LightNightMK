@@ -1927,7 +1927,7 @@
       },
       {
         "MessageAppend": {
-          "word": "|th",
+          "word": "|nl",
           "Enabled": false,
           "Keybind": [
             -1,
