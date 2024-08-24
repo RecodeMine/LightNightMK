@@ -19,7 +19,7 @@
       },
       {
         "AimBot": {
-          "Mode": "CSAim",
+          "Mode": "BowAim",
           "Rotation": "Silent",
           "Range": 30.0,
           "AimStrength": 30,
@@ -32,22 +32,22 @@
           "YawRandom": 0.0,
           "PitchRandom": 0.0,
           "AimPredict": 0.5,
-          "Shoot delay": 0,
-          "FOV": 29,
-          "PredictTicks": 20,
-          "Bone": "Torso",
+          "Shoot delay": 5,
+          "FOV": 65,
+          "PredictTicks": 3,
+          "Bone": "Head",
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
         "AirPlace": {
           "Range": 5.0,
-          "Render": "thunder.hack.setting.impl.SettingGroup@328717da",
+          "Render": "thunder.hack.setting.impl.SettingGroup@462fedaf",
           "Swing": true,
           "Fill Color": [
             845427455,
@@ -71,15 +71,15 @@
       {
         "AkrienRadar": {
           "Glow": false,
-          "Height": 2.26,
-          "Down": 3.6200001,
-          "Width": 0.53,
-          "TracerRadius": 70,
+          "Height": 2.28,
+          "Down": 3.63,
+          "Width": 0.44,
+          "TracerRadius": 68,
           "PitchLock": 42,
-          "TracerCMode": "Custom",
+          "TracerCMode": "Astolfo",
           "CompassRadius": 47.0,
           "Circle": [
-            -12673281,
+            -1,
             false,
             0
           ],
@@ -89,13 +89,13 @@
             0
           ],
           "Tracer": [
-            -12673281,
+            -256,
             false,
             0
           ],
           "Position": [
-            0.4671912,
-            0.8043817
+            0.5,
+            0.5
           ],
           "Keybind": [
             -1,
@@ -108,7 +108,7 @@
       {
         "Animations": {
           "OnlyAura": false,
-          "DisableSwapMain": true,
+          "DisableSwapMain": false,
           "DisableSwapOff": true,
           "Mode": "Eleven",
           "SlowAnimation": true,
@@ -124,15 +124,15 @@
       {
         "AntiAFK": {
           "Mode": "Simple",
-          "OnlyWhenAFK": false,
-          "Command": false,
+          "OnlyWhenAFK": true,
+          "Command": true,
           "Move": false,
-          "Spin": true,
-          "RotateSpeed": 5.0,
-          "Jump": true,
-          "Swing": true,
-          "AlwaysSneak": true,
-          "Radius": 3,
+          "Spin": false,
+          "RotateSpeed": 1.0,
+          "Jump": false,
+          "Swing": false,
+          "AlwaysSneak": false,
+          "Radius": 64,
           "Keybind": [
             -1,
             false
@@ -143,11 +143,11 @@
       },
       {
         "AntiAim": {
-          "PitchMode": "Fixed",
-          "YawMode": "Sinus",
-          "Speed": 45,
-          "YawDelta": 70,
-          "PitchDelta": 30,
+          "PitchMode": "None",
+          "YawMode": "Fixed",
+          "Speed": 1,
+          "YawDelta": 60,
+          "PitchDelta": 10,
           "BodySync": true,
           "AllowInteract": true,
           "Keybind": [
@@ -200,7 +200,7 @@
       {
         "AntiBot": {
           "Remove": false,
-          "OnlyAura": false,
+          "OnlyAura": true,
           "Mode": "UUIDCheck",
           "checkTicks": 3,
           "Keybind": [
@@ -278,39 +278,39 @@
       },
       {
         "AntiWeb": {
-          "Mode": "Ignore",
+          "Mode": "Solid",
           "Grim": true,
           "Timer": 20.0,
-          "Speed": 0.5555556,
+          "Speed": 0.3,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
         "ArmorHud": {
           "Mode": "V2",
           "Position": [
-            0.5261711,
-            0.87175775
+            0.4296889,
+            0.9073028
           ],
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
         "ArrayList": {
           "Mode": "ColorText",
-          "GS": 24,
-          "glow": true,
-          "HideHud": false,
+          "GS": 30,
+          "glow": false,
+          "HideHud": true,
           "HideRender": true,
           "RectColor": [
             -16777216,
@@ -318,70 +318,69 @@
             0
           ],
           "SideRectColor": [
-            822083584,
+            -16777216,
             false,
             0
           ],
           "Position": [
-            0.9990988,
-            0.0
+            0.7598298,
+            0.43114883
           ],
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "AspectRatio": {
-          "Ratio": 1.95,
+          "Ratio": 1.78,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "Aura": {
           "Range": 6.0,
           "ThroughWallsRange": 6.0,
-          "ElytraOverride": true,
-          "ElytraRange": 4.54,
-          "ElytraThroughWallsRange": 4.02,
-          "WallsBypass": "V1",
+          "ElytraOverride": false,
+          "ElytraRange": 6.0,
+          "ElytraThroughWallsRange": 6.0,
+          "WallsBypass": "V2",
           "FOV": 180,
-          "RotationMode": "Track",
+          "RotationMode": "Interact",
           "InteractTicks": 1,
           "AutoWeapon": "None",
-          "OnlyWeapon": false,
+          "OnlyWeapon": true,
           "SmartCrit": true,
           "OnlyCrit": false,
           "AutoJump": false,
-          "ShieldBreaker": true,
+          "ShieldBreaker": false,
           "PauseWhileEating": false,
           "TPSSync": false,
           "ClientLook": false,
-          "PauseBaritone": false,
           "OldDelay": false,
-          "MinCPS": 20,
-          "MaxCPS": 20,
+          "MinCPS": 7,
+          "MaxCPS": 12,
           "ESP": "NurikZapen",
-          "Sort": "LowestHealth",
+          "Sort": "LowestDistance",
           "LockTarget": true,
-          "ElytraTarget": true,
-          "Advanced": "thunder.hack.setting.impl.SettingGroup@c2a9821",
-          "AimRange": 0.0,
+          "ElytraTarget": false,
+          "Advanced": "thunder.hack.setting.impl.SettingGroup@7f79db45",
+          "AimRange": 3.1,
           "RandomHitDelay": false,
-          "PauseInInventory": true,
-          "DropSprint": true,
-          "ReturnSprint": true,
-          "RayTrace": "OnlyTarget",
-          "GrimRayTrace": true,
-          "UnpressShield": true,
+          "PauseInInventory": false,
+          "DropSprint": false,
+          "ReturnSprint": false,
+          "RayTrace": "AllEntities",
+          "GrimRayTrace": false,
+          "UnpressShield": false,
           "DisableOnDeath": true,
           "TPDisable": false,
           "FastFall": false,
@@ -389,7 +388,7 @@
           "PullValue": 3.0,
           "AttackHand": "MainHand",
           "Resolver": "Advantage",
-          "BackTicks": 4,
+          "BackTicks": 3,
           "ResolverVisualisation": false,
           "AccelerateOnHit": "Off",
           "MinYawStep": 65,
@@ -399,11 +398,11 @@
           "PitchAccelerate": 1.65,
           "AttackCooldown": 0.9,
           "AttackBaseTime": 0.5,
-          "AttackTickLimit": 10,
+          "AttackTickLimit": 11,
           "CritFallDistance": 0.0,
-          "Targets": "thunder.hack.setting.impl.SettingGroup@1682df74",
+          "Targets": "thunder.hack.setting.impl.SettingGroup@324d427a",
           "Players": true,
-          "Mobs": false,
+          "Mobs": true,
           "Animals": true,
           "Villagers": true,
           "Slimes": true,
@@ -411,9 +410,8 @@
           "OnlyAngryHostiles": true,
           "Projectiles": true,
           "IgnoreInvisibleEntities": false,
-          "IgnoreNamed": false,
           "IgnoreTeam": false,
-          "IgnoreCreative": false,
+          "IgnoreCreative": true,
           "IgnoreNaked": false,
           "AttackShieldingEntities": true,
           "Keybind": [
@@ -421,7 +419,7 @@
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -429,7 +427,7 @@
           "Page": "Main",
           "AK47": "ON",
           "Timing": "NORMAL",
-          "Rotate": false,
+          "Rotate": true,
           "YawStep": false,
           "YawAngle": 180.0,
           "TargetLogic": "Distance",
@@ -532,7 +530,7 @@
           "Tights": "Protection",
           "Feet": "Protection",
           "ElytraPriority": "Ignore",
-          "Delay": 1,
+          "Delay": 5,
           "OldVersion": false,
           "PauseInventory": false,
           "NoMove": false,
@@ -548,8 +546,8 @@
       },
       {
         "AutoAuth": {
-          "Mode": "Custom",
-          "Password": 123467,
+          "Mode": "Qwerty",
+          "Password": "none",
           "ShowPassword": true,
           "Keybind": [
             -1,
@@ -563,23 +561,23 @@
         "AutoBed": {
           "InteractMode": "Vanilla",
           "Range": 4.0,
-          "WallRange": 6.0,
-          "PlaceDelay": 0,
-          "ExplodeDelay": 0,
+          "WallRange": 4.0,
+          "PlaceDelay": 100,
+          "ExplodeDelay": 100,
           "MinDamage": 8.0,
-          "MaxSelfDamage": 15.277778,
+          "MaxSelfDamage": 4.0,
           "DimensionCheck": false,
           "SwitchToHotbar": true,
           "1.12 Place": false,
           "AutoSwap": true,
           "AutoCraft": true,
-          "MinBeds": 1,
-          "BedsPerCraft": 3,
+          "MinBeds": 4,
+          "BedsPerCraft": 8,
           "Render": true,
           "SelfDamage": true,
           "RenderDamage": true,
           "Fill": [
-            -2037017195,
+            -1768581739,
             false,
             0
           ],
@@ -589,7 +587,7 @@
             0
           ],
           "Text": [
-            -838860801,
+            -1,
             false,
             0
           ],
@@ -612,7 +610,7 @@
           "Trigger": "LackOfRegen",
           "HP": 8,
           "OnlyOnGround": true,
-          "PauseAura": false,
+          "PauseAura": true,
           "Keybind": [
             -1,
             false
@@ -623,52 +621,51 @@
       },
       {
         "AutoCrystal": {
-          "Page": "Main",
-          "Await": false,
+          "Page": "Break",
+          "Await": true,
           "Timing": "NORMAL",
-          "Sequential": "Strict",
-          "InstantBreak": "OnSpawn",
+          "Sequential": "Off",
           "Rotate": "MATRIX",
-          "YawStep": false,
-          "YawAngle": 20.0,
+          "YawStep": true,
+          "YawAngle": 180.0,
           "TargetLogic": "Distance",
           "TargetRange": 10.0,
+          "OnBreakBlock": "PlaceOn",
           "Extrapolation": 0,
-          "Interact": "Strict",
-          "ССStrict": false,
-          "RayTraceBypass": true,
+          "Interact": "Default",
+          "ССStrict": true,
+          "RayTraceBypass": false,
           "1.12": false,
-          "CC": false,
-          "PlaceDelay": 8,
-          "LowPlaceDelay": 5,
+          "CC": true,
+          "PlaceDelay": 0,
+          "LowPlaceDelay": 0,
           "PlaceRange": 6.0,
           "PlaceWallRange": 6.0,
-          "Inhibit": true,
-          "BreakDelay": 2,
-          "LowBreakDelay": 2,
-          "BreakRange": 4.96,
-          "BreakWallRange": 3.51,
+          "BreakDelay": 0,
+          "LowBreakDelay": 0,
+          "BreakRange": 6.0,
+          "BreakWallRange": 6.0,
           "CrystalAge": 0,
-          "Mining": false,
+          "Mining": true,
           "Eating": true,
           "Aura": false,
-          "PistonAura": false,
-          "Surround": false,
+          "PistonAura": true,
+          "Surround": true,
           "MiddleClick": true,
-          "HP": 6.0,
-          "SwitchPause": false,
+          "HP": 8.0,
+          "SwitchPause": true,
           "SwitchDelay": 100,
           "AssumeBestArmor": false,
-          "MinDamage": 14.29,
-          "MaxSelfDamage": 8.15,
-          "Safety": "NONE",
-          "SafetyBalance": 1.09,
+          "MinDamage": 10.34,
+          "MaxSelfDamage": 6.61,
+          "Safety": "STABLE",
+          "SafetyBalance": 1.1,
           "ProtectFriends": true,
           "OverrideSelfDamage": true,
-          "LethalMultiplier": 0.55,
+          "LethalMultiplier": 1.0,
           "ArmorBreaker": true,
-          "Armor %": 10.73,
-          "FacePlaceHp": 20.0,
+          "Armor %": 5.0,
+          "FacePlaceHp": 5.0,
           "FacePlaceBtn": [
             340,
             false
@@ -679,72 +676,72 @@
           "AntiWeakness": "SILENT",
           "Swing": "Place",
           "Render": true,
-          "RExtrapolation": false,
+          "RenderExtrapolation": false,
           "ExtrapolationColor": [
             -1,
             false,
             0
           ],
-          "RInteractVector": true,
+          "RenderInteractVector": true,
           "InteractColor": [
             -65536,
             false,
             0
           ],
           "RenderMode": "Fade",
-          "SelfDamage": false,
+          "SelfDamage": true,
           "RenderDamage": true,
           "Block Fill Color": [
-            1677720571,
+            -16711767,
             false,
             0
           ],
           "Block Line Color": [
-            -1073741825,
+            -16733441,
             false,
             0
           ],
           "Block Line Width": 2,
-          "Slide Delay": 98,
+          "Slide Delay": 200,
           "Text Color": [
-            -721420289,
+            -1,
             false,
             0
           ],
           "TargetName": false,
-          "CurrentSide": true,
-          "Speed": true,
+          "CurrentSide": false,
+          "Speed": false,
           "ConfirmTime": false,
-          "CalcInfo": true,
+          "CalcInfo": false,
           "Keybind": [
-            "M3",
+            67,
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "AutoCrystalBase": {
-          "TargetLogic": "HP",
-          "Range": 5,
-          "MinDamageDelta": 14.67,
-          "PlaceDelay": 5,
+          "TargetLogic": "Distance",
+          "Range": 4,
+          "MinDamageDelta": 9.11,
+          "PlaceDelay": 292,
           "CalcDelay": 0,
           "Interact": "Strict",
           "Rotate": true,
-          "Notification": true,
-          "DisableNoObby": false,
+          "Notification": false,
+          "DisableNoObby": true,
           "Render": true,
           "RenderMode": "All",
-          "AnimationMode": "TNT",
+          "AnimationMode": "Fade",
           "RenderFillColor": [
-            -1564617473,
+            -6974059,
             false,
             0
           ],
           "RenderLineColor": [
-            2025706751,
+            -6974059,
             false,
             0
           ],
@@ -754,27 +751,13 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
-        }
-      },
-      {
-        "AutoCrystalInfo": {
-          "Position": [
-            0.5,
-            0.5
-          ],
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
           "Enabled": false
         }
       },
       {
         "AutoEZ": {
           "global": true,
-          "Mode": "Custom",
+          "Mode": "Basic",
           "Server": "Universal",
           "Keybind": [
             -1,
@@ -792,8 +775,6 @@
           "RottenFlesh": false,
           "SpiderEye": false,
           "Pufferfish": false,
-          "SwapBack": true,
-          "PauseBaritone": true,
           "Keybind": [
             -1,
             false
@@ -819,7 +800,7 @@
       {
         "AutoFlyme": {
           "InstantSpeed": true,
-          "hover": true,
+          "hover": false,
           "UseTimer": false,
           "hoverY": 0.228,
           "speed": 1.05,
@@ -834,11 +815,11 @@
       {
         "AutoGApple": {
           "UseDelay": 0,
-          "health": 17.65,
+          "health": 16.37,
           "Absorption": false,
-          "AutoTotemIntegration": false,
+          "AutoTotemIntegration": true,
           "Keybind": [
-            -1,
+            "M4",
             false
           ],
           "Drawn": true,
@@ -847,7 +828,7 @@
       },
       {
         "AutoGear": {
-          "ActionDelay": 2,
+          "ActionDelay": 20,
           "Click/Action": 1,
           "Keybind": [
             -1,
@@ -861,14 +842,14 @@
         "AutoLeave": {
           "AntiHelperLeave": true,
           "AntiKTLeave": true,
-          "AutoDisable": false,
+          "AutoDisable": true,
           "InstantLeave": true,
           "Command": "hub",
-          "Leave if": "thunder.hack.setting.impl.SettingGroup@10f59790",
+          "Leave if": "thunder.hack.setting.impl.SettingGroup@15c34239",
           "LowHp": false,
           "Totems": false,
           "TotemsCount": 2,
-          "HP": 8.100002,
+          "HP": 8.0,
           "Staff": "None",
           "Players": "Leave",
           "Distance": 256,
@@ -884,7 +865,7 @@
         "AutoRespawn": {
           "deathcoords": false,
           "Auto Kit": false,
-          "kit name": "new2",
+          "kit name": "kitname",
           "Auto Home": false,
           "Auto Waypoint": false,
           "Keybind": [
@@ -892,14 +873,14 @@
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
         "AutoSex": {
-          "Target Range": 1,
+          "Target Range": 5,
           "Sex Mode": "Active",
-          "Message Delay": 15,
+          "Message Delay": 1,
           "Keybind": [
             -1,
             false
@@ -951,7 +932,7 @@
       },
       {
         "AutoTPaccept": {
-          "Grief": true,
+          "Grief": false,
           "onlyFriends": true,
           "Duo": false,
           "TimeOut": 60,
@@ -960,40 +941,40 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "AutoTool": {
           "SwapBack": true,
-          "SaveItem": false,
+          "SaveItem": true,
           "Silent": false,
-          "EchestSilk": false,
+          "EchestSilk": true,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "AutoTotem": {
-          "Mode": "NewVersion",
-          "Item": "GApple",
+          "Mode": "MatrixPick",
+          "Item": "Totem",
           "BindSwap": true,
           "SwapButton": [
-            258,
+            "M4",
             false
           ],
-          "Swap": "GappleShield",
+          "Swap": "GappleBall",
           "NCPStrict": false,
-          "HP": 4.39,
-          "ShieldGappleHp": 13.11,
-          "CalcAbsorption": false,
+          "HP": 10.98,
+          "ShieldGappleHp": 16.0,
+          "CalcAbsorption": true,
           "StopMotion": false,
           "ResetAttackCooldown": false,
-          "Safety": "thunder.hack.setting.impl.SettingGroup@4846fe3f",
+          "Safety": "thunder.hack.setting.impl.SettingGroup@24510037",
           "HotbarFallback": false,
           "FallBackCalc": true,
           "OnElytra": false,
@@ -1005,8 +986,8 @@
           "OnCreeper": false,
           "OnAnchor": false,
           "OnTNT": false,
-          "RightClickGapple": "Off",
-          "CrappleSpoof": false,
+          "RightClickGapple": "OnlySafe",
+          "CrappleSpoof": true,
           "Keybind": [
             -1,
             false
@@ -1021,7 +1002,7 @@
           "BuyItem": "apple",
           "Sell": false,
           "SellItem": "bread",
-          "Disable": "thunder.hack.setting.impl.SettingGroup@48bfe13c",
+          "Disable": "thunder.hack.setting.impl.SettingGroup@7c57d855",
           "NoVillagers": true,
           "NoItems": false,
           "Keybind": [
@@ -1040,7 +1021,7 @@
           "Delay/Place": 3,
           "Trap Mode": "Full",
           "Range": 5.0,
-          "Interact": "AirPlace",
+          "Interact": "Strict",
           "Place Mode": "Normal",
           "Rotate": "None",
           "Swing": false,
@@ -1049,14 +1030,14 @@
           "Remove": false,
           "Break Mode": "Normal",
           "Anti Weakness": false,
-          "Blocks": "thunder.hack.setting.impl.SettingGroup@6186baac",
+          "Blocks": "thunder.hack.setting.impl.SettingGroup@1403cbeb",
           "Obsidian": true,
           "Anchor": false,
           "EnderChest": true,
           "Netherite": false,
           "Crying Obsidian": true,
           "Dirt": false,
-          "Pause": "thunder.hack.setting.impl.SettingGroup@5df3e81b",
+          "Pause": "thunder.hack.setting.impl.SettingGroup@1b5e91d8",
           "On Eat": false,
           "On Break": false,
           "Render": true,
@@ -1102,12 +1083,12 @@
           "Interact": "Strict",
           "PlaceMode": "Normal",
           "Rotate": "None",
-          "Selection": "thunder.hack.setting.impl.SettingGroup@22bb529c",
+          "Selection": "thunder.hack.setting.impl.SettingGroup@37226a3c",
           "Head": true,
           "Leggs": true,
           "Surround": true,
           "UpperSurround": false,
-          "Render": "thunder.hack.setting.impl.SettingGroup@15baf1f6",
+          "Render": "thunder.hack.setting.impl.SettingGroup@75f599fd",
           "Render Mode": "Fade",
           "Render Fill Color": [
             -6974059,
@@ -1149,6 +1130,18 @@
         }
       },
       {
+        "Bad Trip": {
+          "Speed": 500,
+          "Factor": 0.5,
+          "Keybind": [
+            -1,
+            false
+          ],
+          "Drawn": true,
+          "Enabled": false
+        }
+      },
+      {
         "BanStats": {
           "Color": [
             -16746497,
@@ -1177,7 +1170,6 @@
           "AllowSprint": true,
           "Debug": false,
           "EnterPortal": false,
-          "DesktopNotifications": false,
           "Keybind": [
             -1,
             false
@@ -1191,8 +1183,8 @@
           "Pulse": false,
           "AutoDisable": false,
           "DisableOnVelocity": false,
-          "DisablePackets": 45,
-          "PulsePackets": 18,
+          "DisablePackets": 17,
+          "PulsePackets": 20,
           "Render": true,
           "Render Mode": "Circle",
           "Color": [
@@ -1234,12 +1226,10 @@
             "brown_shulker_box",
             "green_shulker_box",
             "red_shulker_box",
-            "black_shulker_box",
-            "pointed_dripstone"
+            "black_shulker_box"
           ],
           "Range": 100,
-          "Limit": false,
-          "LimitCount": 50,
+          "Limit": 50,
           "Color": [
             -16711681,
             false,
@@ -1259,13 +1249,13 @@
       },
       {
         "BlockHighLight": {
-          "Mode": "Fill",
+          "Mode": "FilledSide",
           "Color": [
-            486078712,
+            -1806747208,
             false,
             0
           ],
-          "LineWidth": 3.2222223,
+          "LineWidth": 5.0,
           "Keybind": [
             -1,
             false
@@ -1278,49 +1268,49 @@
         "Blocker": {
           "Place Per Tick": 1,
           "Delay": 0,
-          "Logic": "thunder.hack.setting.impl.SettingGroup@41bd7a37",
+          "Logic": "thunder.hack.setting.impl.SettingGroup@7fa3483b",
           "Anti Cev": true,
           "Anti Civ": true,
-          "Expand": false,
+          "Expand": true,
           "Anti TNT": false,
           "Anti Anchor": false,
-          "Detect": "thunder.hack.setting.impl.SettingGroup@3ccf12b",
+          "Detect": "thunder.hack.setting.impl.SettingGroup@101cd646",
           "On Break Packet": true,
           "On Attack Block": false,
-          "On Break": true,
-          "Range": 5.38,
+          "On Break": false,
+          "Range": 5.0,
           "Interact": "Strict",
-          "Place Mode": "Packet",
-          "Rotate": "Default",
-          "Swing": true,
+          "Place Mode": "Normal",
+          "Rotate": "None",
+          "Swing": false,
           "Crystal Breaker": false,
           "Break Delay": 100,
           "Remove": false,
           "Break Mode": "Normal",
           "Anti Weakness": false,
-          "Blocks": "thunder.hack.setting.impl.SettingGroup@7b9b7c7c",
+          "Blocks": "thunder.hack.setting.impl.SettingGroup@34cb3df3",
           "Obsidian": true,
           "Anchor": false,
           "EnderChest": true,
           "Netherite": false,
           "Crying Obsidian": true,
           "Dirt": false,
-          "Pause": "thunder.hack.setting.impl.SettingGroup@396c17b8",
+          "Pause": "thunder.hack.setting.impl.SettingGroup@6da870e6",
           "On Eat": false,
           "Render": true,
           "Render Mode": "All",
           "Animation Mode": "Fade",
           "Fill Color": [
-            -491392,
+            -6974059,
             false,
             0
           ],
           "Line Color": [
-            -1,
+            -6974059,
             false,
             0
           ],
-          "Line Width": 3,
+          "Line Width": 2,
           "Keybind": [
             -1,
             false
@@ -1331,26 +1321,26 @@
       },
       {
         "BoatFly": {
-          "Mode": "Motion",
+          "Mode": "Packet",
           "Phase": false,
-          "Gravity": true,
+          "Gravity": false,
           "AutoMount": true,
           "AllowShift": true,
-          "Speed": 0.3,
-          "YSpeed": 0.24,
-          "Advanced": "thunder.hack.setting.impl.SettingGroup@13aabe60",
+          "Speed": 2.0,
+          "YSpeed": 1.0,
+          "Advanced": "thunder.hack.setting.impl.SettingGroup@8af0ff8",
           "GlideSpeed": 0.0,
           "ClickSlot": false,
-          "Limit": false,
+          "Limit": true,
           "OnGroundPacket": false,
           "SpoofPackets": false,
-          "Jitter": 10.0,
-          "CancelRotations": false,
-          "Cancel": false,
+          "Jitter": 0.1,
+          "CancelRotations": true,
+          "Cancel": true,
           "Pause": false,
-          "EnableTicks": 21,
-          "WaitTicks": 18,
-          "StopUnloaded": false,
+          "EnableTicks": 10,
+          "WaitTicks": 10,
+          "StopUnloaded": true,
           "Timer": 1.0,
           "HideBoat": true,
           "Keybind": [
@@ -1363,20 +1353,20 @@
       },
       {
         "BowPop": {
-          "Rotation": true,
+          "Rotation": false,
           "Mode": "Maximum",
-          "Factor": 20.0,
-          "Exploit": "Phobos",
-          "Scale": 0.4,
+          "Factor": 1.0,
+          "Exploit": "Strong",
+          "Scale": 0.01,
           "Minimize": false,
-          "Delay": 10.0,
-          "Selection": "thunder.hack.setting.impl.SettingGroup@770b4097",
+          "Delay": 5.0,
+          "Selection": "thunder.hack.setting.impl.SettingGroup@7e77564d",
           "Bows": true,
-          "EPearls": false,
-          "XP": false,
-          "Eggs": false,
-          "SplashPotions": false,
-          "Snowballs": false,
+          "EPearls": true,
+          "XP": true,
+          "Eggs": true,
+          "SplashPotions": true,
+          "Snowballs": true,
           "Keybind": [
             -1,
             false
@@ -1387,7 +1377,7 @@
       },
       {
         "BowSpam": {
-          "Delay": 1,
+          "Delay": 3,
           "Keybind": [
             -1,
             false
@@ -1398,7 +1388,7 @@
       },
       {
         "BreadCrumbs": {
-          "ThroughWalls": true,
+          "ThroughWalls": false,
           "ListLimit": 10,
           "ColorMode": "Sync",
           "Color": [
@@ -1411,34 +1401,34 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "BreakHighLight": {
           "Mode": "Shrink",
           "Color": [
-            704708051,
+            -1862467584,
             false,
             0
           ],
           "Color2": [
-            704708051,
+            -196608,
             false,
             0
           ],
           "OutlineColor": [
-            704708051,
+            -1874854656,
             false,
             0
           ],
           "OutlineColor2": [
-            704708051,
+            -13697792,
             false,
             0
           ],
           "TextColor": [
-            704708051,
+            -1,
             false,
             0
           ],
@@ -1449,17 +1439,17 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "Breaker": {
-          "Target": "AutoCrystal",
+          "Target": "Breaker",
           "OnlyIfHole": false,
-          "TargetBy": "FOV",
-          "Range": 4,
-          "MinDamage": 6.0,
-          "MaxSelfDamage": 12.0,
+          "TargetBy": "Distance",
+          "Range": 5,
+          "MinDamage": 0.0,
+          "MaxSelfDamage": 0.0,
           "CevPriority": true,
           "AntiShulker": true,
           "Keybind": [
@@ -1479,12 +1469,12 @@
           "Scale-xplosion": false,
           "ScaleFactor": 1.0,
           "ScaleDelay": 250,
-          "Attack": false,
+          "Attack": true,
           "PlaceDisable": false,
           "Wait": true,
-          "Evade": true,
+          "Evade": false,
           "NoVoid": false,
-          "OnGround": false,
+          "OnGround": true,
           "IgnoreHeadBlock": false,
           "Rotate": true,
           "Discrete": true,
@@ -1519,21 +1509,21 @@
         "Chams": {
           "HandItems": false,
           "HandItemsColor": [
-            721420287,
+            -1827152291,
             false,
             0
           ],
-          "Crystals": true,
+          "Crystals": false,
           "CrystalColor": [
-            -6640385,
+            -1825711896,
             false,
             0
           ],
           "StaticCrystal": true,
-          "CrystalMode": "Two",
-          "Players": true,
+          "CrystalMode": "One",
+          "Players": false,
           "PlayerColor": [
-            -12496989,
+            -1825711896,
             false,
             0
           ],
@@ -1542,9 +1532,9 @@
             false,
             0
           ],
-          "PlayerTexture": false,
+          "PlayerTexture": true,
           "Simple": false,
-          "AlternativeBlending": false,
+          "AlternativeBlending": true,
           "Keybind": [
             -1,
             false
@@ -1567,7 +1557,7 @@
       },
       {
         "ChatUtils": {
-          "Welcomer": "Off",
+          "Welcomer": "Client",
           "Prefix": "None",
           "Totems": false,
           "Time": false,
@@ -1575,14 +1565,13 @@
           "PMSound": "Default",
           "ZOV": false,
           "wAvY": false,
-          "Translit": false,
           "AntiCoordLeak": false,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -1609,30 +1598,12 @@
             "chipped_anvil",
             "damaged_anvil",
             "enchanting_table",
-            "cobweb",
-            "shulker_box",
-            "white_shulker_box",
-            "orange_shulker_box",
-            "magenta_shulker_box",
-            "light_blue_shulker_box",
-            "yellow_shulker_box",
-            "lime_shulker_box",
-            "pink_shulker_box",
-            "gray_shulker_box",
-            "light_gray_shulker_box",
-            "blue_shulker_box",
-            "brown_shulker_box",
-            "black_shulker_box",
-            "red_shulker_box",
-            "green_shulker_box",
-            "cyan_shulker_box",
-            "purple_shulker_box",
-            "end_crystal"
+            "cobweb"
           ],
-          "Delay": 1,
-          "Random": true,
+          "Delay": 100,
+          "Random": false,
           "Close": false,
-          "AutoMyst": true,
+          "AutoMyst": false,
           "Sort": "None",
           "Keybind": [
             -1,
@@ -1649,7 +1620,7 @@
             false
           ],
           "Color": [
-            -64508,
+            -1,
             false,
             0
           ],
@@ -1663,24 +1634,23 @@
       },
       {
         "ClickGui": {
-          "Gradient": "both",
-          "TextSide": "Center",
+          "Gradient": "LeftToRight",
+          "TextSide": "Left",
           "ScrollMode": "Old",
-          "CategoryHeight": 357,
+          "CategoryHeight": 300,
           "Descriptions": true,
-          "Blur": false,
-          "Tips": false,
-          "PauseBaritone": false,
+          "Blur": true,
+          "Tips": true,
           "Image": "None",
           "ModuleWidth": 100,
-          "ModuleHeight": 15,
+          "ModuleHeight": 14,
           "SettingFontScale": 12,
           "ModulesFontScale": 14,
           "Gear": true,
-          "GearScale": 70,
+          "GearScale": 60,
           "GearDuration": 0.5,
           "GearStop": 25,
-          "CloseAnimation": false,
+          "CloseAnimation": true,
           "Keybind": [
             80,
             false
@@ -1705,7 +1675,7 @@
       {
         "ClientSettings": {
           "FutureCompatibility": false,
-          "CustomMainMenu": false,
+          "CustomMainMenu": true,
           "ScaleFactorFix": false,
           "ScaleFactorFixValue": 2.0,
           "RenderRotations": true,
@@ -1713,9 +1683,9 @@
           "ClientMessages": true,
           "Debug": false,
           "CustomBob": true,
-          "Telemetry": true,
-          "Language": "RU",
-          "Prefix": ".",
+          "Telemetry": false,
+          "Language": "ENG",
+          "Prefix": "@",
           "ClipCommandMode": "Matrix",
           "Keybind": [
             -1,
@@ -1728,7 +1698,7 @@
       {
         "ClientSpoof": {
           "Mode": "Custom",
-          "Client": "1njecting",
+          "Client": "zovclient",
           "Keybind": [
             -1,
             false
@@ -1740,8 +1710,8 @@
       {
         "Cooldowns": {
           "Position": [
-            0.08001058,
-            0.054201078
+            0.29449487,
+            0.49230948
           ],
           "Keybind": [
             -1,
@@ -1755,8 +1725,8 @@
         "Coords": {
           "NetherCoords": "On",
           "Position": [
-            0.0,
-            0.97555333
+            0.5,
+            0.5
           ],
           "Keybind": [
             -1,
@@ -1768,9 +1738,9 @@
       },
       {
         "Criticals": {
-          "Mode": "OldNCP",
+          "Mode": "Grim",
           "Keybind": [
-            -1,
+            341,
             false
           ],
           "Drawn": true,
@@ -1785,12 +1755,12 @@
           "T": false,
           "ColorMode": "Sync",
           "Color": [
-            -16711681,
+            575714484,
             false,
             0
           ],
           "Dynamic": true,
-          "Range": 10.0,
+          "Range": 30.0,
           "Speed": 3.0,
           "BackSpeed": 5.0,
           "Keybind": [
@@ -1808,16 +1778,16 @@
           "Down": false,
           "DownHeight": 3.63,
           "Width": 0.44,
-          "TracerRadius": 37,
+          "TracerRadius": 68,
           "PitchLock": 42,
-          "TracerCMode": "Custom",
+          "TracerCMode": "Astolfo",
           "Friend": [
             -16717824,
             false,
             0
           ],
           "Tracer": [
-            -10125313,
+            -256,
             false,
             0
           ],
@@ -1840,16 +1810,16 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "DiscordRPC": {
           "Picture": "Recode",
           "ShowIP": true,
-          "StateMode": "Stats",
-          "State": "Beta?_Recode?_NextGen?",
-          "Nickname": false,
+          "StateMode": "Version",
+          "State": "Beta?%%Recode?%%NextGen?",
+          "Nickname": true,
           "Keybind": [
             -1,
             false
@@ -1872,9 +1842,9 @@
       },
       {
         "ESP": {
-          "LingeringPotions": true,
-          "TNTFuse": true,
-          "TNTRange": 0.8888889,
+          "LingeringPotions": false,
+          "TNTFuse": false,
+          "TNTRange": 8.0,
           "TNTFuseText": [
             -1,
             false,
@@ -1904,29 +1874,29 @@
             0
           ],
           "BurrowColor": [
-            -15213479,
+            -1,
             false,
             0
           ],
-          "Pearls": true,
+          "Pearls": false,
           "DizorentRadius": true,
           "DizorentColor": [
             -1291783732,
             false,
             0
           ],
-          "Box": "thunder.hack.setting.impl.SettingGroup@5753aa96",
-          "Players": false,
-          "Friends": false,
-          "Crystals": false,
+          "Box": "thunder.hack.setting.impl.SettingGroup@133ec8d5",
+          "Players": true,
+          "Friends": true,
+          "Crystals": true,
           "Creatures": false,
           "Monsters": false,
           "Ambients": false,
           "Others": false,
           "Outline": true,
-          "ColorMode": "Custom",
+          "ColorMode": "SyncColor",
           "renderHealth": true,
-          "BoxColors": "thunder.hack.setting.impl.SettingGroup@edba613",
+          "BoxColors": "thunder.hack.setting.impl.SettingGroup@3d3fb514",
           "PlayersC": [
             -28160,
             false,
@@ -1977,7 +1947,7 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
@@ -1997,24 +1967,24 @@
         "Elytra+": {
           "Mode": "FireWork",
           "DisablerDelay": 1,
-          "2b2t": false,
+          "2b2t": true,
           "OnlySpace": true,
           "StopOnGround": false,
-          "InfDurability": true,
+          "InfDurability": false,
           "Vertical": false,
           "NCPStrict": "Off",
           "AntiKick": "Jitter",
-          "XZSpeed": 1.31,
-          "YSpeed": 0.29,
-          "FireSlot": 9,
-          "Acceleration": false,
+          "XZSpeed": 1.91,
+          "YSpeed": 0.54,
+          "FireSlot": 4,
+          "Acceleration": true,
           "AccelerateFactor": 9.0,
-          "FireDelay": 0.9,
-          "Grim": false,
+          "FireDelay": 0.82,
+          "Grim": true,
           "Rotate": true,
-          "FireWorkExtender": true,
-          "GroundSafe": true,
-          "KeepFlying": false,
+          "FireWorkExtender": false,
+          "GroundSafe": false,
+          "KeepFlying": true,
           "DisableOnFlag": false,
           "AllowFireSwap": false,
           "BowBomb": false,
@@ -2037,11 +2007,11 @@
           "RedeployInterval": 1.0,
           "RedeployTimeout": 5.0,
           "RedeployDelay": 0.5,
-          "InfiniteMaxSpeed": 136.66667,
-          "InfiniteMinSpeed": 14.666667,
-          "InfiniteMaxHeight": 170,
+          "InfiniteMaxSpeed": 150.0,
+          "InfiniteMinSpeed": 25.0,
+          "InfiniteMaxHeight": 200,
           "Keybind": [
-            -1,
+            90,
             false
           ],
           "Drawn": true,
@@ -2050,9 +2020,9 @@
       },
       {
         "ElytraRecast": {
-          "Exploit": "Strict",
+          "Exploit": "None",
           "ChangePitch": true,
-          "PitchValue": 90.0,
+          "PitchValue": 55.0,
           "AutoWalk": true,
           "AutoJump": true,
           "AllowBroken": true,
@@ -2077,17 +2047,17 @@
       },
       {
         "ElytraSwap": {
-          "Delay": true,
+          "Delay": false,
           "Mode": "Bind",
           "SwitchButton": [
-            "M3",
-            false
-          ],
-          "FireWorkButton": [
             "M4",
             false
           ],
-          "StartFireWork": true,
+          "FireWorkButton": [
+            "M3",
+            false
+          ],
+          "StartFireWork": false,
           "FireWorkMode": "Silent",
           "Keybind": [
             -1,
@@ -2112,24 +2082,9 @@
           "Accelerate": true,
           "AccelerateFactor": 9.0,
           "StopUnloaded": true,
-          "Speed": 0.82,
+          "Speed": 0.77,
           "Timer": 1.0,
-          "Jitter": 0.0,
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
-          "Enabled": false
-        }
-      },
-      {
-        "Example Hud Element": {
-          "NetherCoords": "On",
-          "Position": [
-            0.7660875,
-            0.57193977
-          ],
+          "Jitter": 0.05,
           "Keybind": [
             -1,
             false
@@ -2151,15 +2106,15 @@
       {
         "FGHelper": {
           "Server": "Survival",
-          "PhotoMath": true,
-          "Powder": false,
-          "AntiTpHere": true,
+          "PhotoMath": false,
+          "Powder": true,
+          "AntiTpHere": false,
           "ClanInvite": false,
           "InviteDelay": 10,
           "JumpBoostRemove": true,
-          "/fix all": false,
-          "/feed": false,
-          "/near": false,
+          "/fix all": true,
+          "/feed": true,
+          "/near": true,
           "AirDropWay": true,
           "Farmilka": true,
           "Keybind": [
@@ -2172,15 +2127,15 @@
       },
       {
         "FOV": {
-          "FOV modifier": 91,
-          "Item Fov": true,
-          "Item FOV modifier": 130,
+          "FOV modifier": 120,
+          "Item Fov": false,
+          "Item FOV modifier": 120,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
@@ -2192,7 +2147,7 @@
             false
           ],
           "Trap": [
-            73,
+            -1,
             false
           ],
           "AucHelper": true,
@@ -2208,36 +2163,36 @@
       },
       {
         "FakePlayer": {
-          "CopyInventory": false,
+          "CopyInventory": true,
           "Record": false,
-          "Play": true,
+          "Play": false,
           "AutoTotem": true,
-          "Name": "Hell_Raider",
+          "Name": "Smertinx",
           "Keybind": [
-            -1,
+            321,
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "FastLatency": {
-          "Delay": 200,
+          "Delay": 80,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "FastUse": {
           "Delay": 0,
-          "Blocks": true,
+          "Blocks": false,
           "Crystals": false,
-          "XP": true,
+          "XP": false,
           "All": true,
           "Keybind": [
             -1,
@@ -2249,27 +2204,13 @@
       },
       {
         "Flight": {
-          "Mode": "MatrixJump",
-          "Horizontal": 0.49,
-          "Vertical": 0.3,
+          "Mode": "Vanilla",
+          "Horizontal": 1.0,
+          "Vertical": 0.78,
           "Boost": 1.0,
           "AutoToggle": false,
           "Ticks": 8,
           "AntiKick": false,
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": false,
-          "Enabled": false
-        }
-      },
-      {
-        "Fps": {
-          "Position": [
-            0.08749996,
-            0.033333316
-          ],
           "Keybind": [
             -1,
             false
@@ -2279,11 +2220,25 @@
         }
       },
       {
+        "Fps": {
+          "Position": [
+            0.9812497,
+            0.9291669
+          ],
+          "Keybind": [
+            -1,
+            false
+          ],
+          "Drawn": true,
+          "Enabled": true
+        }
+      },
+      {
         "FreeCam": {
-          "HSpeed": 0.49999982,
-          "VSpeed": 0.74,
+          "HSpeed": 1.0,
+          "VSpeed": 0.42,
           "Freeze": false,
-          "Track": true,
+          "Track": false,
           "Keybind": [
             -1,
             false
@@ -2343,8 +2298,8 @@
       },
       {
         "HitBoxes": {
-          "XZExpand": 5.0,
-          "YExpand": 5.0,
+          "XZExpand": 1.0,
+          "YExpand": 0.0,
           "AffectToAura": false,
           "Keybind": [
             -1,
@@ -2356,7 +2311,7 @@
       },
       {
         "HitBubbles": {
-          "LifeTime": 15,
+          "LifeTime": 50,
           "Keybind": [
             -1,
             false
@@ -2367,18 +2322,18 @@
       },
       {
         "HitParticles": {
-          "Mode": "Bloom",
+          "Mode": "Stars",
           "Physics": "Fall",
           "Color": [
-            -2008883201,
+            -2013200640,
             false,
             0
           ],
           "Self": false,
           "Amount": 2,
-          "LifeTime": 3,
-          "Speed": 12,
-          "Scale": 1.77,
+          "LifeTime": 2,
+          "Speed": 2,
+          "Scale": 3.0,
           "ColorMode": "Sync",
           "HealColor": [
             3142544,
@@ -2395,7 +2350,7 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
@@ -2412,16 +2367,16 @@
       },
       {
         "HoleESP": {
-          "Mode": "Fade",
-          "Range XY": 9,
+          "Mode": "CubeOutline",
+          "Range XY": 10,
           "Range Y": 5,
           "Indestructible": [
-            -5168231,
+            -8781569,
             false,
             0
           ],
           "Bedrock": [
-            -14462287,
+            -16711855,
             false,
             0
           ],
@@ -2439,33 +2394,33 @@
       {
         "HoleFill": {
           "Rotate": "None",
-          "Interact Mode": "Strict",
+          "Interact Mode": "Vanilla",
           "Range": 5.0,
           "WallRange": 5.0,
-          "BLock Per Tick": 4,
+          "BLock Per Tick": 1,
           "Delay": 0,
           "Jump Disable": false,
           "Blocks": "All",
-          "Fill Holes": "thunder.hack.setting.impl.SettingGroup@48444016",
+          "Fill Holes": "thunder.hack.setting.impl.SettingGroup@4d1fbd84",
           "Self Fill": false,
-          "Self Fill Mode": "Trap",
+          "Self Fill Mode": "Burrow",
           "Single": true,
           "Double": false,
           "Quad": false,
-          "Mode": "Target",
-          "Range To Target": 3.0,
+          "Mode": "Always",
+          "Range To Target": 2.0,
           "Auto Disable": false,
-          "Place Mode": "Normal",
-          "Render": "thunder.hack.setting.impl.SettingGroup@6566ae71",
+          "Place Mode": "Packet",
+          "Render": "thunder.hack.setting.impl.SettingGroup@99e4f54",
           "Render Mode": "All",
-          "Animation Mode": "Static",
+          "Animation Mode": "Fade",
           "Render Fill Color": [
-            -1802136171,
+            -6974059,
             false,
             0
           ],
           "Render Line Color": [
-            -1315596907,
+            -6974059,
             false,
             0
           ],
@@ -2485,7 +2440,7 @@
           "Search FOV": 360,
           "Use Timer": false,
           "Timer Value": 1.0,
-          "Auto Disable": "thunder.hack.setting.impl.SettingGroup@2fabaf51",
+          "Auto Disable": "thunder.hack.setting.impl.SettingGroup@6c8356d2",
           "On Death": true,
           "In Hole": true,
           "No Holes": false,
@@ -2499,7 +2454,7 @@
       },
       {
         "Hotbar": {
-          "LeftHandMode": "Separately",
+          "LeftHandMode": "Merged",
           "Position": [
             0.5,
             0.5
@@ -2509,7 +2464,7 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
@@ -2528,24 +2483,24 @@
       },
       {
         "HudEditor": {
-          "Sticky": false,
-          "HudStyle": "Glowing",
-          "ArrowsStyle": "New",
-          "ColorMode": "DoubleColor",
-          "ColorSpeed": 3,
+          "Sticky": true,
+          "HudStyle": "Blurry",
+          "ArrowsStyle": "Default",
+          "ColorMode": "Static",
+          "ColorSpeed": 18,
           "Light": true,
           "Color": [
-            -16772800,
+            -10197867,
             false,
             0
           ],
           "Color2": [
-            -4336385,
+            -8365735,
             false,
             0
           ],
           "PlateColor": [
-            838860799,
+            -419430400,
             false,
             0
           ],
@@ -2555,22 +2510,22 @@
             0
           ],
           "TextColor2": [
-            -16777216,
+            -1,
             false,
             0
           ],
           "BlurColor": [
-            -15592896,
+            -16773595,
             false,
             0
           ],
-          "HudRound": 1.0,
-          "Alpha": 1.0,
-          "Blend": 10.22,
-          "Outline": 0.0,
-          "Glow": 0.0,
-          "BlurOpacity": 0.57,
-          "BlurStrength": 46.16,
+          "HudRound": 4.0,
+          "Alpha": 0.9,
+          "Blend": 10.0,
+          "Outline": 0.5,
+          "Glow": 0.5,
+          "BlurOpacity": 0.55,
+          "BlurStrength": 20.0,
           "Keybind": [
             -1,
             false
@@ -2667,11 +2622,10 @@
             "leather_boots",
             "leather_leggings",
             "leather_chestplate",
-            "leather_helmet",
-            "compass"
+            "leather_helmet"
           ],
-          "DropWhen": "Always",
-          "Delay": 0,
+          "DropWhen": "NotInInventory",
+          "Delay": 50,
           "CleanChests": false,
           "Keybind": [
             -1,
@@ -2683,9 +2637,9 @@
       },
       {
         "ItemESP": {
-          "Shadow": false,
+          "Shadow": true,
           "ShadowColor": [
-            -16777216,
+            -14602120,
             false,
             0
           ],
@@ -2694,8 +2648,8 @@
             false,
             0
           ],
-          "Mode": "Rect",
-          "Radius": 1.0,
+          "Mode": "Circle",
+          "Radius": 0.64,
           "UseHudColor": true,
           "ColorOffset": 2,
           "CircleColor": [
@@ -2725,7 +2679,7 @@
       },
       {
         "Jesus": {
-          "Mode": "SOLID2",
+          "Mode": "SOLID",
           "Keybind": [
             -1,
             false
@@ -2737,16 +2691,16 @@
       {
         "JumpCircle": {
           "Mode": "Default",
-          "EaseOut": true,
-          "RotateSpeed": 2.0,
+          "EaseOut": false,
+          "RotateSpeed": 5.0,
           "CircleScale": 1.0,
-          "OnlySelf": false,
+          "OnlySelf": true,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -2757,14 +2711,14 @@
             0
           ],
           "OffColor": [
-            -460552,
+            1,
             false,
             0
           ],
           "OnlyEnabled": true,
           "Position": [
-            0.064117745,
-            0.10781884
+            0.019977977,
+            0.31760263
           ],
           "Keybind": [
             -1,
@@ -2776,12 +2730,12 @@
       },
       {
         "KillEffect": {
-          "Mode": "Orthodox",
-          "Y Speed": 2,
+          "Mode": "LightningBolt",
+          "Y Speed": 0,
           "Volume": 100,
           "Play Sound": true,
           "Color": [
-            -2030043392,
+            -1775095760,
             false,
             0
           ],
@@ -2791,15 +2745,15 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "KillFeed": {
-          "ResetOnDeath": false,
+          "ResetOnDeath": true,
           "Position": [
-            0.8915242,
-            0.005556005
+            0.5,
+            0.5
           ],
           "Keybind": [
             -1,
@@ -2812,8 +2766,8 @@
       {
         "KillStats": {
           "Position": [
-            0.9755119,
-            0.9759259
+            0.5,
+            0.5
           ],
           "Keybind": [
             -1,
@@ -2834,36 +2788,36 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "LegacyHud": {
-          "Font": "Monsterrat",
+          "Font": "Minecraft",
           "Color": [
-            -3295070,
-            true,
+            -16746497,
+            false,
             0
           ],
-          "RenderingUp": true,
+          "RenderingUp": false,
           "Watermark": false,
           "ActiveModules": false,
-          "Coords": true,
-          "Direction": true,
-          "Armor": true,
+          "Coords": false,
+          "Direction": false,
+          "Armor": false,
           "Totems": false,
           "Welcomer": false,
-          "Speed": true,
+          "Speed": false,
           "BPS": false,
-          "Potions": true,
-          "Ping": true,
-          "TPS": true,
+          "Potions": false,
+          "Ping": false,
+          "TPS": false,
           "ExtraTPS": true,
           "OffhandDurability": false,
           "MainhandDurability": false,
-          "FPS": true,
+          "FPS": false,
           "Chests": false,
-          "Time": true,
+          "Time": false,
           "WatermarkPosY": 2,
           "Keybind": [
             -1,
@@ -2879,13 +2833,13 @@
           "MaxDistance": 4.0,
           "Refill": true,
           "RefillSlot": 9,
-          "Anchors": false,
+          "Anchors": true,
           "AnchorDelay": 50,
           "AnchorBind": [
             89,
             false
           ],
-          "Crystals": false,
+          "Crystals": true,
           "CrystalDelay": 50,
           "CrystalBind": [
             85,
@@ -2897,11 +2851,6 @@
           "ShieldBreaker": false,
           "BreakerDelay": 50,
           "SwapBack": true,
-          "WindBoostJump": true,
-          "WindBoostBind": [
-            73,
-            false
-          ],
           "Keybind": [
             -1,
             false
@@ -2924,20 +2873,20 @@
       },
       {
         "LogoutSpots": {
-          "RenderMode": "TexturedChams",
+          "RenderMode": "Chams",
           "Color": [
-            -2013200640,
+            -13032704,
             false,
             0
           ],
-          "Notifications": true,
+          "Notifications": false,
           "IgnoreBots": true,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -2946,7 +2895,7 @@
           "JumpDisable": true,
           "TimerSpeed": 1.0,
           "Speed": 1.35,
-          "MaxDistance": 6.5555553,
+          "MaxDistance": 10.0,
           "Keybind": [
             -1,
             false
@@ -2958,7 +2907,7 @@
       {
         "Media": {
           "Skin Protect": true,
-          "Nick Protect": false,
+          "Nick Protect": true,
           "Keybind": [
             -1,
             false
@@ -2970,8 +2919,8 @@
       {
         "MemoryHud": {
           "Position": [
-            0.42653728,
-            0.0
+            0.5,
+            0.5
           ],
           "Keybind": [
             -1,
@@ -2983,7 +2932,7 @@
       },
       {
         "MessageAppend": {
-          "word": "|nl",
+          "word": "%%NL%%RECODE",
           "Keybind": [
             -1,
             false
@@ -2996,15 +2945,15 @@
         "MiddleClick": {
           "OnBlock": "Pearl",
           "OnAir": "Pearl",
-          "OnEntity": "Friend",
-          "OnElytra": "Pearl",
+          "OnEntity": "Pearl",
+          "OnElytra": "None",
           "Silent": true,
           "Inventory": true,
-          "SwapDelay": 66,
+          "SwapDelay": 100,
           "AntiWaste": true,
           "StopOn": 90,
           "AntiPickUp": true,
-          "FeetXP": true,
+          "FeetXP": false,
           "Keybind": [
             -1,
             false
@@ -3048,20 +2997,20 @@
       },
       {
         "NameProtect": {
-          "name": "NEVERLOSE.CC",
+          "name": "Hell_Raider",
           "Hide friends": true,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "NameTags": {
-          "Self": true,
-          "Scale": 0.86999995,
+          "Self": false,
+          "Scale": 1.0,
           "Resize": false,
           "Height": 2.0,
           "Gamemode": false,
@@ -3072,7 +3021,7 @@
           "Distance": false,
           "TotemPops": true,
           "OutlineType": "New",
-          "FriendOutline": "Custom",
+          "FriendOutline": "None",
           "OutlineColor": [
             -2147483648,
             false,
@@ -3083,7 +3032,7 @@
             false,
             0
           ],
-          "Enchants": false,
+          "Enchants": true,
           "OnlyHands": false,
           "FunTimeHp": false,
           "IgnoreBots": false,
@@ -3100,19 +3049,19 @@
             0
           ],
           "FontMode": "Fancy",
-          "ArmorMode": "Durability",
-          "Health": "Dots",
+          "ArmorMode": "Full",
+          "Health": "Number",
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
         "NoBob": {
-          "Mode": "Off",
+          "Mode": "Sexy",
           "Keybind": [
             -1,
             false
@@ -3123,8 +3072,8 @@
       },
       {
         "NoCameraClip": {
-          "AntiFront": false,
-          "Distance": 4.94,
+          "AntiFront": true,
+          "Distance": 6.79,
           "Keybind": [
             -1,
             false
@@ -3139,8 +3088,8 @@
             -1,
             false
           ],
-          "Delay": 1000,
-          "LoopPerTick": 10,
+          "Delay": 250,
+          "LoopPerTick": 1,
           "LoadGui": false,
           "Keybind": [
             -1,
@@ -3152,8 +3101,8 @@
       },
       {
         "NoEntityTrace": {
-          "Pickaxe Only": false,
-          "No Sword": false,
+          "Pickaxe Only": true,
+          "No Sword": true,
           "Keybind": [
             -1,
             false
@@ -3164,7 +3113,7 @@
       },
       {
         "NoFall": {
-          "Mode": "MatrixOffGround",
+          "Mode": "Rubberband",
           "FallDistance": "Calc",
           "FallDistanceVal": 10,
           "PowderSnowBucket": true,
@@ -3194,7 +3143,7 @@
       },
       {
         "NoJumpDelay": {
-          "Delay": 0,
+          "Delay": 1,
           "Keybind": [
             -1,
             false
@@ -3234,7 +3183,7 @@
           "Auto": true,
           "HurtCam": true,
           "Potions": true,
-          "XP": true,
+          "XP": false,
           "Arrows": true,
           "Eggs": true,
           "Guardian": true,
@@ -3250,10 +3199,10 @@
           "BlockOverlay": true,
           "Nausea": true,
           "Blindness": true,
-          "Fog": true,
+          "Fog": false,
           "Darkness": true,
-          "Items": true,
-          "Crystals": true,
+          "Items": false,
+          "Crystals": false,
           "FireEntity": true,
           "BreakParticles": true,
           "AntiTitle": true,
@@ -3262,7 +3211,6 @@
           "SignText": true,
           "NoWeather": true,
           "NoArmorStands": true,
-          "SpawnerEntity": true,
           "Keybind": [
             -1,
             false
@@ -3278,7 +3226,7 @@
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -3293,9 +3241,9 @@
       },
       {
         "NoSlow": {
-          "Mode": "NCP",
+          "Mode": "GrimNew",
           "MainHand": true,
-          "Selection": "thunder.hack.setting.impl.SettingGroup@7c937f89",
+          "Selection": "thunder.hack.setting.impl.SettingGroup@2c54d943",
           "Food": true,
           "Projectiles": true,
           "Shield": true,
@@ -3304,8 +3252,8 @@
           "Slime": true,
           "Ice": true,
           "SweetBerryBush": true,
-          "Sneak": false,
-          "Crawl": false,
+          "Sneak": true,
+          "Crawl": true,
           "Keybind": [
             -1,
             false
@@ -3326,7 +3274,7 @@
       },
       {
         "Notifications": {
-          "Mode": "Default",
+          "Mode": "CrossHair",
           "Keybind": [
             -1,
             false
@@ -3343,14 +3291,14 @@
             "lapis_block",
             "emerald_block"
           ],
-          "Mode": "FastAF",
-          "Delay": 100,
-          "Blocks": "All",
+          "Mode": "Default",
+          "Delay": 25,
+          "Blocks": "Select",
           "IgnoreWalls": false,
-          "Flatten": true,
+          "Flatten": false,
           "Creative": false,
-          "AvoidLava": true,
-          "Range": 3.0,
+          "AvoidLava": false,
+          "Range": 4.2,
           "ColorMode": "Sync",
           "Color": [
             575714484,
@@ -3378,8 +3326,8 @@
       {
         "PVPResources": {
           "Position": [
-            0.0020833346,
-            0.050536785
+            0.5,
+            0.5
           ],
           "Keybind": [
             -1,
@@ -3406,16 +3354,16 @@
       {
         "PacketFly": {
           "Mode": "Fast",
-          "Type": "Bounds",
-          "Phase": "Off",
+          "Type": "Preserve",
+          "Phase": "Full",
           "Limit": true,
           "AntiKick": true,
-          "Interval": 30,
+          "Interval": 4,
           "UpInterval": 20,
           "anticKickOffset": 0.04,
-          "Speed": 0.999,
+          "Speed": 1.0,
           "UpSpeed": 0.062,
-          "Timer": 1.9,
+          "Timer": 1.0,
           "IncreaseTicks": 1,
           "Factor": 1.0,
           "Offset": 1337.0,
@@ -3423,13 +3371,13 @@
             -1,
             false
           ],
-          "Drawn": false,
+          "Drawn": true,
           "Enabled": false
         }
       },
       {
         "Parkour": {
-          "JumpFactor": 0.001,
+          "JumpFactor": 0.01,
           "Keybind": [
             -1,
             false
@@ -3443,9 +3391,9 @@
           "FireFlies": true,
           "FFCount": 30,
           "FFSize": 1.0,
-          "Mode": "Stars",
-          "Count": 457,
-          "Size": 1.04,
+          "Mode": "SnowFlake",
+          "Count": 100,
+          "Size": 1.0,
           "ColorMode": "Sync",
           "Color": [
             3649978,
@@ -3458,7 +3406,7 @@
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -3484,36 +3432,10 @@
       {
         "PearlChaser": {
           "StopMotion": false,
-          "LegitStop": true,
+          "LegitStop": false,
           "PauseAura": false,
           "OnlyOnGround": false,
           "NoMove": false,
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
-          "Enabled": true
-        }
-      },
-      {
-        "PenisESP": {
-          "OnlyOwn": true,
-          "BallSize": 0.1,
-          "PenisSize": 1.5,
-          "FriendSize": 1.5,
-          "EnemySize": 0.5,
-          "Gradation": 30,
-          "PenisColor": [
-            -1592198,
-            false,
-            0
-          ],
-          "HeadColor": [
-            -1035596,
-            false,
-            0
-          ],
           "Keybind": [
             -1,
             false
@@ -3524,7 +3446,7 @@
       },
       {
         "PerfectDelay": {
-          "Horse": "Legit",
+          "Horse": "Off",
           "Bow": true,
           "Crossbow": true,
           "Trident": true,
@@ -3533,7 +3455,7 @@
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -3544,7 +3466,7 @@
           "OnlyOnGround": false,
           "AutoDisable": false,
           "BreakTimeout": 4,
-          "PearlTimeout": 12,
+          "PearlTimeout": 0,
           "Pitch": 80.0,
           "Strict": false,
           "Keybind": [
@@ -3558,15 +3480,15 @@
       {
         "Ping": {
           "Position": [
-            0.17604584,
-            0.9726891
+            0.9812497,
+            0.90730274
           ],
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -3574,14 +3496,14 @@
           "Delay/Place": 1,
           "Block/Tick": 3,
           "Pattern": "All",
-          "SupportPlace": true,
+          "SupportPlace": false,
           "FireBypass": false,
           "OldVersion": false,
           "Trap": false,
           "Target Range": 10.0,
-          "PlaceRange": 5.0,
-          "WallRange": 5.0,
-          "Place Mode": "Packet",
+          "PlaceRange": 4.0,
+          "WallRange": 4.0,
+          "Place Mode": "Normal",
           "Interact": "Strict",
           "Rotate": "None",
           "Keybind": [
@@ -3594,17 +3516,17 @@
       },
       {
         "PistonPush": {
-          "Target Range": 3.211111,
+          "Target Range": 5.0,
           "Blocks/Tick": 2,
           "Delay/Place": 0,
-          "Place Mode": "Packet",
+          "Place Mode": "Normal",
           "Interact": "Strict",
-          "Rotate": true,
+          "Rotate": false,
           "Charge Type": "All",
           "Piston Type": "All",
           "Auto Swap": true,
           "Swing": true,
-          "Render": "thunder.hack.setting.impl.SettingGroup@163dd4fd",
+          "Render": "thunder.hack.setting.impl.SettingGroup@1c17b2d0",
           "Fill Color": [
             855572480,
             false,
@@ -3629,13 +3551,13 @@
           "Mode": "Textured",
           "SecondLayer": true,
           "Color": [
-            -1929325313,
+            -2008460146,
             false,
             0
           ],
-          "YSpeed": 3,
+          "YSpeed": 0,
           "AlphaSpeed": 5,
-          "RotationSpeed": 3.0,
+          "RotationSpeed": 0.25,
           "Keybind": [
             -1,
             false
@@ -3668,8 +3590,8 @@
         "Potions": {
           "Colored": false,
           "Position": [
-            0.17275499,
-            0.10614164
+            0.9221872,
+            0.36393654
           ],
           "Keybind": [
             -1,
@@ -3715,21 +3637,9 @@
           "Color3": "§f",
           "Color4": "§f",
           "Position": [
-            0.7645092,
-            0.62944067
+            0.5,
+            0.5
           ],
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
-          "Enabled": false
-        }
-      },
-      {
-        "Radio": {
-          "Volume": 22,
-          "Chanel": "RockFM",
           "Keybind": [
             -1,
             false
@@ -3740,19 +3650,19 @@
       },
       {
         "Reach": {
-          "BlocksRange": 10.0,
-          "EntityRange": 10.0,
+          "BlocksRange": 5.9,
+          "EntityRange": 6.02,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
         "Regen": {
-          "Health": 20,
+          "Health": 10,
           "Packets/Tick": 20,
           "Keybind": [
             -1,
@@ -3764,8 +3674,8 @@
       },
       {
         "ReverseStep": {
-          "Mode": "Motion",
-          "Timer": 5.1,
+          "Mode": "Timer",
+          "Timer": 2.1,
           "Motion": 1.0,
           "AnyBlock": true,
           "PauseIfShift": true,
@@ -3774,12 +3684,12 @@
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
         "Rotations": {
-          "MoveFix": "Free",
+          "MoveFix": "Off",
           "ClientLook": false,
           "Keybind": [
             -1,
@@ -3801,14 +3711,14 @@
       },
       {
         "Scaffold": {
-          "Mode": "StrictNCP",
+          "Mode": "Grim",
           "PlaceMode": "Normal",
-          "Switch": "Silent",
+          "Switch": "Normal",
           "Rotate": true,
-          "LockY": false,
-          "OnlyNotHoldingSpace": false,
+          "LockY": true,
+          "OnlyNotHoldingSpace": true,
           "AutoJump": false,
-          "WorkWhileSneaking": false,
+          "WorkWhileSneaking": true,
           "Tower": true,
           "SafeWalk": true,
           "EchestHolding": false,
@@ -3838,10 +3748,10 @@
         "SelfTrap": {
           "Place Timing": "Default",
           "Block/Tick": 8,
-          "Delay/Place": 0,
+          "Delay/Place": 3,
           "Trap Mode": "Full",
           "Range": 5.0,
-          "Interact": "Vanilla",
+          "Interact": "Strict",
           "Place Mode": "Normal",
           "Rotate": "None",
           "Swing": false,
@@ -3850,17 +3760,17 @@
           "Remove": false,
           "Break Mode": "Normal",
           "Anti Weakness": false,
-          "Blocks": "thunder.hack.setting.impl.SettingGroup@345b0bc4",
+          "Blocks": "thunder.hack.setting.impl.SettingGroup@114b551c",
           "Obsidian": true,
           "Anchor": false,
           "EnderChest": true,
           "Netherite": false,
           "Crying Obsidian": true,
           "Dirt": false,
-          "Pause": "thunder.hack.setting.impl.SettingGroup@535345f1",
+          "Pause": "thunder.hack.setting.impl.SettingGroup@1b5f08b7",
           "On Eat": false,
           "On Break": false,
-          "Render": false,
+          "Render": true,
           "Render Mode": "All",
           "Animation Mode": "Fade",
           "Fill Color": [
@@ -3884,55 +3794,55 @@
       },
       {
         "Shaders": {
-          "Select": "thunder.hack.setting.impl.SettingGroup@2b31f95a",
-          "Hands": true,
-          "Players": false,
-          "Self": true,
+          "Select": "thunder.hack.setting.impl.SettingGroup@3affa83e",
+          "Hands": false,
+          "Players": true,
+          "Self": false,
           "Friends": false,
-          "Crystals": false,
+          "Crystals": true,
           "Creatures": false,
           "Monsters": false,
           "Ambients": false,
           "Others": false,
-          "Mode": "Default",
+          "Mode": "Fade",
           "HandsMode": "Fade",
-          "MaxRange": 16,
-          "GradientFactor": 10.73,
-          "Gradient": 9.02,
-          "GradientAlpha": 21,
-          "LineWidth": 42,
+          "MaxRange": 127,
+          "GradientFactor": 2.0,
+          "Gradient": 2.0,
+          "GradientAlpha": 170,
+          "LineWidth": 195,
           "Quality": 2,
-          "SmokeOctaves": 30,
-          "FillAlpha": 255,
+          "SmokeOctaves": 14,
+          "FillAlpha": 170,
           "SmokeGlow": true,
-          "Colors": "thunder.hack.setting.impl.SettingGroup@2ae3a2dc",
+          "Colors": "thunder.hack.setting.impl.SettingGroup@1882026a",
           "Outline": [
-            -4336385,
+            -2006628609,
             false,
             0
           ],
           "SmokeOutline": [
-            -13873665,
+            -2013200640,
             false,
             0
           ],
           "SmokeOutline2": [
-            -11834369,
+            -2013200640,
             false,
             0
           ],
           "Fill": [
-            -10973441,
+            -385200754,
             false,
             0
           ],
           "SmokeFill": [
-            -1447425,
+            -1320932744,
             false,
             0
           ],
           "SmokeFil2": [
-            -10395137,
+            2016608867,
             false,
             0
           ],
@@ -3962,7 +3872,7 @@
       },
       {
         "SoundFX": {
-          "Volume": 79,
+          "Volume": 100,
           "EnableMode": "Inertia",
           "DisableMode": "Inertia",
           "HitSound": "SKEET",
@@ -3980,10 +3890,10 @@
         "Spammer": {
           "mode": "Chat",
           "messages": "File",
-          "prefix": "Msg",
+          "prefix": "W",
           "global": true,
           "AntiSpam": false,
-          "delay": 5.12,
+          "delay": 5.0,
           "Keybind": [
             -1,
             false
@@ -3994,50 +3904,50 @@
       },
       {
         "Speed": {
-          "Mode": "StrictStrafe",
-          "Use Timer": false,
+          "Mode": "GrimIce",
+          "Use Timer": true,
           "PauseInLiquids": false,
           "PauseWhileSneaking": false,
           "HurtTime": 0,
-          "BoostFactor": 0.3,
+          "BoostFactor": 2.0,
           "AllowOffGround": true,
           "ShiftTicks": 0,
           "FireSlot": 1,
           "Delay": 8,
-          "Strict": false,
-          "TimerSpeed": 1.0,
+          "Strict": true,
+          "TimerSpeed": 1.088,
           "ArmorStands": false,
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
         "SpeedMine": {
           "Mode": "Packet",
-          "AvoidNetherrack": false,
-          "StartMode": "StartAbort",
+          "AvoidNetherrack": true,
+          "StartMode": "StartStop",
           "SwitchMode": "Alternative",
-          "SwapDelay": 211,
-          "Factor": 0.98333335,
+          "SwapDelay": 0,
+          "Factor": 0.74,
           "RebreakFactor": 7.0,
           "Speed": 0.5,
-          "Range": 5.0,
+          "Range": 4.62,
           "Rotate": true,
           "PlaceCrystal": true,
           "ResetOnSwitch": true,
-          "BreakAttempts": 50,
-          "Packets": "thunder.hack.setting.impl.SettingGroup@468a896f",
+          "BreakAttempts": 1,
+          "Packets": "thunder.hack.setting.impl.SettingGroup@532a47d3",
           "Stop": true,
           "Abort": false,
-          "Start": false,
+          "Start": true,
           "Stop2": false,
-          "Render": false,
+          "Render": true,
           "Smooth": true,
-          "Render Mode": "Block",
+          "Render Mode": "Shrink",
           "Start Line Color": [
             -922812416,
             false,
@@ -4072,21 +3982,21 @@
           "BPS": false,
           "Average": false,
           "Position": [
-            0.4890978,
-            0.4285767
+            0.9812497,
+            0.97638917
           ],
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
         "Spider": {
-          "delay": 7,
-          "Mode": "Default",
+          "delay": 2,
+          "Mode": "Blocks",
           "Keybind": [
             -1,
             false
@@ -4098,8 +4008,8 @@
       {
         "StaffBoard": {
           "Position": [
-            0.67792755,
-            0.5384961
+            0.5,
+            0.5
           ],
           "Keybind": [
             -1,
@@ -4125,11 +4035,11 @@
       },
       {
         "Step": {
-          "Strict": true,
+          "Strict": false,
           "Height": 2.0,
-          "Timer": false,
-          "PauseIfShift": true,
-          "StepDelay": 60,
+          "Timer": true,
+          "PauseIfShift": false,
+          "StepDelay": 200,
           "Mode": "NCP",
           "Keybind": [
             -1,
@@ -4151,10 +4061,10 @@
           "Furnace": false,
           "Hopper": false,
           "Barrel": false,
-          "Minecart": true,
-          "ItemFrame": true,
+          "Minecart": false,
+          "ItemFrame": false,
           "ChestColor": [
-            483786496,
+            -2013200640,
             false,
             0
           ],
@@ -4164,17 +4074,17 @@
             0
           ],
           "ShulkerColor": [
-            -1795227648,
+            -2013200640,
             false,
             0
           ],
           "EChestColor": [
-            -2002124545,
+            -2013200640,
             false,
             0
           ],
           "FrameColor": [
-            707499307,
+            -2013200640,
             false,
             0
           ],
@@ -4184,27 +4094,27 @@
             0
           ],
           "FurnaceColor": [
-            -2007539101,
+            -2013200640,
             false,
             0
           ],
           "HopperColor": [
-            -2006423702,
+            -2013200640,
             false,
             0
           ],
           "DispenserColor": [
-            -2006818205,
+            -2013200640,
             false,
             0
           ],
           "BarrelColor": [
-            -2013234689,
+            -2013200640,
             false,
             0
           ],
           "MinecartColor": [
-            -2005752974,
+            -2013200640,
             false,
             0
           ],
@@ -4218,10 +4128,10 @@
       },
       {
         "Strafe": {
-          "Boost": "None",
-          "speed": 0.8,
-          "Reduction": 8.0,
-          "MaxVelocity": 0.37,
+          "Boost": "Elytra",
+          "speed": 1.3,
+          "Reduction": 6.0,
+          "MaxVelocity": 0.8,
           "Sunrise": true,
           "Keybind": [
             -1,
@@ -4234,33 +4144,33 @@
       {
         "Surround": {
           "Blocks/Place": 8,
-          "Delay/Place": 1,
+          "Delay/Place": 0,
           "Center": "Disabled",
-          "Auto Disable": "thunder.hack.setting.impl.SettingGroup@fbf3082",
+          "Auto Disable": "thunder.hack.setting.impl.SettingGroup@3053f7b1",
           "On Y Change": true,
           "On Tp": "None",
-          "On Death": true,
+          "On Death": false,
           "Range": 5.0,
-          "Interact": "AirPlace",
-          "Place Mode": "Packet",
-          "Rotate": "None",
+          "Interact": "Vanilla",
+          "Place Mode": "Normal",
+          "Rotate": "Default",
           "Swing": false,
           "Crystal Breaker": false,
           "Break Delay": 100,
-          "Remove": true,
+          "Remove": false,
           "Break Mode": "Normal",
           "Anti Weakness": false,
-          "Blocks": "thunder.hack.setting.impl.SettingGroup@2be0e306",
+          "Blocks": "thunder.hack.setting.impl.SettingGroup@77aa07dd",
           "Obsidian": true,
           "Anchor": false,
           "EnderChest": true,
           "Netherite": false,
           "Crying Obsidian": true,
           "Dirt": false,
-          "Pause": "thunder.hack.setting.impl.SettingGroup@1c2241e4",
+          "Pause": "thunder.hack.setting.impl.SettingGroup@7fb3da10",
           "On Eat": false,
           "On Break": false,
-          "Render": false,
+          "Render": true,
           "Render Mode": "All",
           "Animation Mode": "Fade",
           "Fill Color": [
@@ -4275,7 +4185,7 @@
           ],
           "Line Width": 2,
           "Keybind": [
-            90,
+            88,
             false
           ],
           "Drawn": true,
@@ -4289,7 +4199,7 @@
           "Delay/Place": 3,
           "PlaceMode": "Normal",
           "Rotate": "None",
-          "Render": "thunder.hack.setting.impl.SettingGroup@ef162fe",
+          "Render": "thunder.hack.setting.impl.SettingGroup@7e261eea",
           "RenderMode": "Fade",
           "Fill": [
             -6974059,
@@ -4314,15 +4224,15 @@
         "TPS": {
           "ExtraTPS": true,
           "Position": [
-            0.092719704,
-            0.9726891
+            0.9812497,
+            0.9527775
           ],
           "Keybind": [
             -1,
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -4346,24 +4256,24 @@
           "AnimationX": 0,
           "AnimationY": 0,
           "HP Mode": "HP",
-          "Image": "None",
+          "Image": "Anime",
           "Mode": "NurikZapen",
           "Color1": [
-            -33218,
+            -16492289,
             false,
             0
           ],
           "Color2": [
-            -9919630,
+            -16492289,
             false,
             0
           ],
           "FunTimeHP": false,
-          "Mini": true,
+          "Mini": false,
           "Absorption": true,
           "Position": [
-            0.2587537,
-            0.44339445
+            0.4484374,
+            0.8611114
           ],
           "Keybind": [
             -1,
@@ -4376,13 +4286,13 @@
       {
         "TargetStrafe": {
           "Jump": true,
-          "Distance": 2.94,
-          "Boost": "Damage",
+          "Distance": 1.44,
+          "Boost": "Elytra",
           "speed": 1.3,
-          "Reduction": 1.07,
-          "MaxVelocity": 0.33,
+          "Reduction": 6.0,
+          "MaxVelocity": 0.8,
           "Keybind": [
-            "M4",
+            -1,
             false
           ],
           "Drawn": true,
@@ -4401,7 +4311,7 @@
             false,
             0
           ],
-          "ScrollSpeed": 0.93000007,
+          "ScrollSpeed": 1.0,
           "Keybind": [
             -1,
             false
@@ -4430,13 +4340,13 @@
         "Timer": {
           "Mode": "Matrix",
           "Old": false,
-          "Speed": 1.19,
-          "ShiftTicks": 3,
+          "Speed": 10.0,
+          "ShiftTicks": 10,
           "BoostKey": [
-            88,
+            -1,
             false
           ],
-          "OnFlag": "Disable",
+          "OnFlag": "Reset",
           "Keybind": [
             -1,
             false
@@ -4448,8 +4358,8 @@
       {
         "TimerIndicator": {
           "Position": [
-            0.46666652,
-            0.8592316
+            0.46768966,
+            0.8124736
           ],
           "Keybind": [
             -1,
@@ -4482,13 +4392,13 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "TotemAnimation": {
-          "Mode": "Otkisuli",
-          "Speed": 85,
+          "Mode": "Off",
+          "Speed": 40,
           "Keybind": [
             -1,
             false
@@ -4519,7 +4429,7 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
@@ -4534,14 +4444,14 @@
       },
       {
         "Tracers": {
-          "Height": 2.0,
+          "Height": 0.0,
           "Color": [
-            -1073741825,
+            -1812004864,
             false,
             0
           ],
           "Friends": [
-            -15212963,
+            -1827152291,
             false,
             0
           ],
@@ -4566,22 +4476,22 @@
       },
       {
         "Trails": {
-          "Xp": true,
-          "Pearls": "Particles",
-          "Arrows": "Particles",
-          "Players": "Trail",
+          "Xp": false,
+          "Pearls": "Trail",
+          "Arrows": "Trail",
+          "Players": "None",
           "OnlySelf": false,
           "Color": [
-            -33024,
+            -2011679290,
             false,
             0
           ],
-          "Down": 0.0,
-          "Height": 0.1,
+          "Down": 0.5,
+          "Height": 1.3,
           "Speed": 2,
           "Mode": "Stars",
-          "Physics": "Fly",
-          "Scale": 6,
+          "Physics": "Fall",
+          "Scale": 3,
           "Amount": 2,
           "LifeTime": 2,
           "ColorMode": "Sync",
@@ -4595,7 +4505,7 @@
             false
           ],
           "Drawn": true,
-          "Enabled": false
+          "Enabled": true
         }
       },
       {
@@ -4622,8 +4532,8 @@
       },
       {
         "TridentBoost": {
-          "Mode": "Motion",
-          "Factor": 1.0,
+          "Mode": "Factor",
+          "Factor": 2.28,
           "Cooldown": 10,
           "AnyWeather": true,
           "Keybind": [
@@ -4636,11 +4546,11 @@
       },
       {
         "TriggerBot": {
-          "Range": 7.0,
+          "Range": 3.0,
           "SmartCrit": true,
-          "OnlyCrit": true,
-          "AutoJump": true,
-          "IgnoreWalls": true,
+          "OnlyCrit": false,
+          "AutoJump": false,
+          "IgnoreWalls": false,
           "PauseWhileEating": false,
           "Keybind": [
             -1,
@@ -4653,12 +4563,12 @@
       {
         "TunnelEsp": {
           "Color": [
-            2147483647,
+            -1366652170,
             false,
             0
           ],
           "Box": true,
-          "Outline": false,
+          "Outline": true,
           "Keybind": [
             -1,
             false
@@ -4696,9 +4606,9 @@
           "PauseOnFlag": false,
           "PauseOnFire": false,
           "Mode": "Cancel",
-          "Vertical": 100.0,
+          "Vertical": 0.0,
           "JumpMode": "Jump",
-          "Horizontal": 33.333332,
+          "Horizontal": 0.0,
           "Motion": 0.42,
           "SmartFail": true,
           "FailRate": 0.3,
@@ -4712,24 +4622,12 @@
         }
       },
       {
-        "Velocity+": {
-          "Ticks": 1,
-          "Mode": "Vulcan",
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
-          "Enabled": false
-        }
-      },
-      {
         "ViewLock": {
           "LockCurrent": true,
           "Pitch": true,
-          "PitchValue": 17.699612,
+          "PitchValue": 0.0,
           "Yaw": true,
-          "YawValue": 180.0,
+          "YawValue": 0.0,
           "Keybind": [
             -1,
             false
@@ -4740,38 +4638,38 @@
       },
       {
         "ViewModel": {
-          "SyncHands": false,
-          "MainHand": "thunder.hack.setting.impl.SettingGroup@783c6882",
-          "positionMainX": 0.0,
-          "positionMainY": 0.0,
-          "positionMainZ": 0.0,
-          "ScaleMain": 0.4,
-          "Rotation": "thunder.hack.setting.impl.SettingGroup@54684c50",
-          "rotationMainX": -32.78,
+          "SyncHands": true,
+          "MainHand": "thunder.hack.setting.impl.SettingGroup@51e790e0",
+          "positionMainX": 0.59,
+          "positionMainY": -0.07,
+          "positionMainZ": -0.73,
+          "ScaleMain": 1.0,
+          "Rotation": "thunder.hack.setting.impl.SettingGroup@76d4f1ee",
+          "rotationMainX": 0.0,
           "rotationMainY": 0.0,
           "rotationMainZ": 0.0,
-          "Animate": "thunder.hack.setting.impl.SettingGroup@5acb1a58",
+          "Animate": "thunder.hack.setting.impl.SettingGroup@1756c67e",
           "animateMainX": false,
           "animateMainY": false,
           "animateMainZ": false,
           "speedAnimateMain": 1.0,
-          "OffHand": "thunder.hack.setting.impl.SettingGroup@5f28656d",
-          "positionOffX": 0.0,
-          "positionOffY": 0.0,
-          "positionOffZ": 0.0,
-          "ScaleOff": 0.4,
-          "RotationOff": "thunder.hack.setting.impl.SettingGroup@44cb6e72",
+          "OffHand": "thunder.hack.setting.impl.SettingGroup@59494b30",
+          "positionOffX": 0.59,
+          "positionOffY": -0.07,
+          "positionOffZ": -0.73,
+          "ScaleOff": 1.0,
+          "RotationOff": "thunder.hack.setting.impl.SettingGroup@34c4b069",
           "rotationOffX": 0.0,
           "rotationOffY": 0.0,
           "rotationOffZ": 0.0,
-          "AnimateOff": "thunder.hack.setting.impl.SettingGroup@5257b077",
+          "AnimateOff": "thunder.hack.setting.impl.SettingGroup@654e7c9e",
           "animateOffX": false,
           "animateOffY": false,
           "animateOffZ": false,
           "speedAnimateOff": 1.0,
-          "Eat": "thunder.hack.setting.impl.SettingGroup@504c79bf",
-          "EatX": 1.01,
-          "EatY": 1.01,
+          "Eat": "thunder.hack.setting.impl.SettingGroup@440a237f",
+          "EatX": 1.0,
+          "EatY": 1.0,
           "Keybind": [
             -1,
             false
@@ -4786,7 +4684,7 @@
           "Enter": true,
           "Friends": true,
           "Sound": true,
-          "Mode": "Both",
+          "Mode": "Notification",
           "Keybind": [
             -1,
             false
@@ -4798,7 +4696,7 @@
       {
         "VoidESP": {
           "Color": [
-            -683655104,
+            -671111680,
             false,
             0
           ],
@@ -4812,91 +4710,12 @@
         }
       },
       {
-        "Vulcan Nofall": {
-          "YMotion": -4,
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
-          "Enabled": false
-        }
-      },
-      {
-        "Vulcan-Inf Fly": {
-          "speed": 4.6,
-          "VulcanFly": true,
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
-          "Enabled": false
-        }
-      },
-      {
-        "VulcanBoatFly": {
-          "HorizontalSpeed": 20.0,
-          "UpwardSpeed": 48.0,
-          "DownwardSpeed": 100.0,
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
-          "Enabled": false
-        }
-      },
-      {
-        "VulcanBoatFlyV2": {
-          "Mode": "Packet",
-          "Phase": true,
-          "Gravity": true,
-          "AutoMount": false,
-          "AllowShift": true,
-          "Speed": 18.0,
-          "YSpeed": 3.0,
-          "Advanced": "thunder.hack.setting.impl.SettingGroup@4c537dd6",
-          "GlideSpeed": 0.0,
-          "ClickSlot": false,
-          "Limit": true,
-          "OnGroundPacket": false,
-          "SpoofPackets": false,
-          "Jitter": 0.1,
-          "CancelRotations": true,
-          "Cancel": true,
-          "Pause": true,
-          "EnableTicks": 1,
-          "WaitTicks": 5,
-          "StopUnloaded": false,
-          "Timer": 0.34,
-          "HideBoat": false,
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
-          "Enabled": false
-        }
-      },
-      {
-        "VulcanGlide": {
-          "Fall Distance": 1.0,
-          "Keybind": [
-            -1,
-            false
-          ],
-          "Drawn": true,
-          "Enabled": false
-        }
-      },
-      {
         "WaterMark": {
           "Mode": "Small",
-          "RU": true,
+          "RU": false,
           "Position": [
-            0.0037217098,
-            0.014140202
+            0.0032260157,
+            0.008305163
           ],
           "Keybind": [
             -1,
@@ -4908,7 +4727,7 @@
       },
       {
         "WaterSpeed": {
-          "Mode": "FunTimeNew",
+          "Mode": "DolphinGrace",
           "Keybind": [
             -1,
             false
@@ -4924,22 +4743,22 @@
             false
           ],
           "Drawn": true,
-          "Enabled": true
+          "Enabled": false
         }
       },
       {
         "Windows": {
           "macroPos": [
-            0.3,
-            0.3
+            0.17038873,
+            0.21390925
           ],
           "configPos": [
             0.35,
             0.35
           ],
           "friendPos": [
-            0.4,
-            0.4
+            0.18645349,
+            0.5686442
           ],
           "waypointPos": [
             0.45,
@@ -4950,7 +4769,7 @@
             0.5
           ],
           "Keybind": [
-            -1,
+            326,
             false
           ],
           "Drawn": true,
@@ -4959,16 +4778,16 @@
       },
       {
         "WorldTweaks": {
-          "FogModify": true,
+          "FogModify": false,
           "FogStart": 0,
-          "FogEnd": 103,
+          "FogEnd": 64,
           "FogColor": [
-            -11574849,
+            -5701377,
             false,
             0
           ],
           "ChangeTime": true,
-          "Time": 8,
+          "Time": 20,
           "Keybind": [
             -1,
             false
@@ -4989,14 +4808,14 @@
       },
       {
         "XRay": {
-          "Plugin": "Old",
-          "WallHack": true,
+          "Plugin": "New",
+          "WallHack": false,
           "OreDeobf": false,
           "Fast": false,
-          "Delay": 19,
+          "Delay": 25,
           "Radius": 5,
-          "Up": 3,
-          "Down": 3,
+          "Up": 5,
+          "Down": 5,
           "Netherite": false,
           "Diamond ": false,
           "Gold": false,
@@ -5009,7 +4828,7 @@
           "Water": false,
           "Lava": false,
           "Keybind": [
-            88,
+            -1,
             false
           ],
           "Drawn": true,
