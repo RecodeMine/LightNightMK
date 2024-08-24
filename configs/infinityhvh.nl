@@ -2983,7 +2983,7 @@
       },
       {
         "MessageAppend": {
-          "word": "|th",
+          "word": "|nl",
           "Keybind": [
             -1,
             false
