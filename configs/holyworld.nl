@@ -2731,7 +2731,7 @@
       },
       {
         "MessageAppend": {
-          "word": "%%TH%%RECODE",
+          "word": "%%NL%%RECODE",
           "Keybind": [
             -1,
             false
