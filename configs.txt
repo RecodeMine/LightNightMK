@@ -8,3 +8,9 @@ cc2;marsel;3.08.2024
 hvh;marsel;23.08.2024
 hvh2;marsel;23.08.2024
 mineblaze;marsel;23.08.2024
+infinityhvh;marsel;24.08.2024
+infinityhvh2;marsel;24.08.2024
+duel-blue;marsel;24.08.2024
+reallyworld;marsel;24.08.2024
+funtime;marsel;24.08.2024
+holyworld;marsel;24.08.2024
