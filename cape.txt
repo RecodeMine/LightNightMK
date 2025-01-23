@@ -3,3 +3,5 @@ abror:tester
 amir:tester
 miron:fbgroup
 else:bkgroup
+Riezza:dev
+TheMindMaster:dev
